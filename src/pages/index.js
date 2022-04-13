@@ -9,6 +9,16 @@ const IndexPage = () => {
       <StaticImage
         src="../images/clifford.jpg"
       />
+      <form
+       name="contact"
+       method="post"
+       data-netlify="true"
+       data-netlify-honeypot="bot-field"
+      >
+        <input name="link" placeholder='Link' type="text"/>
+        <button>Upload</button>
+
+      </form>
     </Layout>
   )
 }
