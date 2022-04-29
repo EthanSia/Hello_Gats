@@ -14,7 +14,7 @@ const IndexPage = () => {
        data-netlify="true"
        data-netlify-honeypot="bot-field"
       >
-        <input name="link" placeholder='Link' type="file"/>
+        <input name="link" placeholder='Link' type="file"></input>
         <button>Upload</button>
 
       </form>
