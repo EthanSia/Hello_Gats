@@ -6,12 +6,33 @@ import React, {useState} from 'react';
 
 const IndexPage = () => {
 
+  const [file, setFile] = useState({});
+
   const changeHandler = (event) => {
-		setSelectedFile(event.target.files[0]);
-		setIsSelected(true);
+	
+    const {name, value} = e.target
+    if (name === 'file' ){
+      return setFile(value)
+    }
 	};
 
-	const handleSubmission = () => {
+  const encode = (data) => {
+    const formData = new FormData();
+    Object.keys(data).forEach((k)=>{
+      formData.append(k,data[k])
+    });
+    return formData
+  }
+
+  const handleSubmission = (event) => {
+		event.preventDefault();
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({ "form-name": "contact", ...this.state }),
+  })
+    .then(() => navigate("/thank-you/"))
+    .catch((error) => alert(error));
 	};
 
 
@@ -24,6 +45,7 @@ const IndexPage = () => {
        method="post"
        data-netlify="true"
        data-netlify-honeypot="bot-field"
+       onSubmit={handleSubmission}
       >
         <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
         <button onClick={handleSubmission}>Upload</button>
