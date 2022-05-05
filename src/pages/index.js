@@ -24,16 +24,16 @@ const IndexPage = () => {
     return formData
   }
 
- /* const handleSubmission = (event) => {
+  const handleSubmission = (event) => {
 		event.preventDefault();
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({ "form-name": "contact", ...this.state }),
+    body: encode({ "form-name": "contact", " " }),
   })
     .then(() => navigate("/thank-you/"))
     .catch((error) => alert(error));
-	};*/
+	};
 
 
   return (
@@ -45,18 +45,15 @@ const IndexPage = () => {
        method="post"
        data-netlify="true"
        data-netlify-honeypot="bot-field"
-       onSubmit="submit"
+       onSubmit={handleSubmission}
       >
-       
-      <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
-     
+        <div>
+          <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
+          <button onClick={handleSubmission}>Upload</button>
+        </div>
       
-      
-
-        
         
       </form>
-      <button type = "submit">Upload</button>
     </div>
   )
 }
