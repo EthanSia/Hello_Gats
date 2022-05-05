@@ -48,7 +48,7 @@ const IndexPage = () => {
        onSubmit="submit"
       >
        
-      <input name="file" placeholder='Link' type="file"/>
+      <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
       <button type = "submit">Upload</button>
 
         
