@@ -24,7 +24,7 @@ const IndexPage = () => {
     return formData
   }
 
-  const handleSubmission = (event) => {
+ /* const handleSubmission = (event) => {
 		event.preventDefault();
   fetch("/", {
     method: "POST",
@@ -33,7 +33,7 @@ const IndexPage = () => {
   })
     .then(() => navigate("/thank-you/"))
     .catch((error) => alert(error));
-	};
+	};*/
 
 
   return (
