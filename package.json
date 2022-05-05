@@ -24,6 +24,8 @@
     "gatsby-source-filesystem": "^4.6.0",
     "gatsby-transformer-sharp": "^4.6.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-native-safe-area-context": "^4.2.5",
+    "react-native-screens": "^3.13.1"
   }
 }
