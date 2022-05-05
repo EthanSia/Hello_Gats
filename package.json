@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -19,7 +19,8 @@
     "@mdx-js/react": "^1.6.22",
     "@react-navigation/native": "^6.0.10",
     "babel-preset-react": "^6.24.1",
-    "gatsby": "^2.19.38",
+    "cross-env": "^7.0.3",
+    "gatsby": "^4.13.1",
     "gatsby-plugin-image": "^0.7.2",
     "gatsby-plugin-mdx": "^2.14.0",
     "gatsby-plugin-sharp": "^2.14.4",
