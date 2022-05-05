@@ -44,12 +44,14 @@ const IndexPage = () => {
        name="contact"
        method="post"
        data-netlify="true"
-       data-netlify-honeypot="bot-field"
-       onSubmit={handleSubmission}
+       onSubmit="submit"
       >
-        <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
-        <button onClick={handleSubmission}>Upload</button>
+        <div>
+          <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
+          <button type = "submit">Upload</button>
 
+        </div>
+        
       </form>
     </div>
   )
