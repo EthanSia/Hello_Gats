@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Link from 'gatsby-link'
 import React, {useState} from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 const IndexPage = () => {
@@ -41,7 +42,8 @@ const IndexPage = () => {
 
 
   return (
-    <div>
+
+    <NavigationContainer>{<div>
       <p>I'm making the upload file or link.</p>
      
       <form
@@ -58,7 +60,8 @@ const IndexPage = () => {
       
         
       </form>
-    </div>
+    </div>}</NavigationContainer>
+    
   )
 }
 
