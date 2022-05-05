@@ -1,0 +1,33 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HELLO",
+  "type": "module",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^2.1.1",
+    "@mdx-js/react": "^1.6.22",
+    "@react-navigation/native": "^6.0.10",
+    "babel-preset-react": "^6.24.1",
+    "gatsby": "^2.19.38",
+    "gatsby-plugin-image": "^0.7.2",
+    "gatsby-plugin-mdx": "^2.14.0",
+    "gatsby-plugin-sharp": "^2.14.4",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-sharp": "^2.12.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-native-safe-area-context": "^4.2.5",
+    "react-native-screens": "^3.13.1"
+  }
+}
