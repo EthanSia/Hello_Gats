@@ -48,8 +48,8 @@ const IndexPage = () => {
        onSubmit="submit"
       >
        
-        <input name="file" placeholder='Link' type="file"></input>
-        <button type = "submit">Upload</button>
+      <input name="file" placeholder='Link' type="file"/>
+      <button type = "submit">Upload</button>
 
         
         
