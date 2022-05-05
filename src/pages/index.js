@@ -37,7 +37,7 @@ const IndexPage = () => {
 
 
   return (
-    <Layout pageTitle="Home Page">
+    <div>
       <p>I'm making the upload file or link.</p>
      
       <form
@@ -51,7 +51,7 @@ const IndexPage = () => {
         <button onClick={handleSubmission}>Upload</button>
 
       </form>
-    </Layout>
+    </div>
   )
 }
 
