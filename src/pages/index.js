@@ -3,6 +3,8 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import Link from 'gatsby-link'
 import React, {useState} from 'react';
+import { useNavigation } from '@react-navigation/native';
+
 
 const IndexPage = () => {
 
@@ -35,6 +37,8 @@ const IndexPage = () => {
     .catch((error) => alert(error));
 	};
 
+  const navigation = useNavigation();
+
 
   return (
     <div>
@@ -49,7 +53,7 @@ const IndexPage = () => {
       >
         <div>
           <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
-          <button onClick={handleSubmission}>Upload</button>
+          <button onClick={()=> navigation.navigate({handleSubmission})}>Upload</button>
         </div>
       
         
