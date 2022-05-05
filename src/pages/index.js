@@ -47,8 +47,10 @@ const IndexPage = () => {
        data-netlify-honeypot="bot-field"
        onSubmit="submit"
       >
-       
-      <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
+       <div>
+         <input name="file" placeholder='Link' type="file" onChange={changeHandler}></input>
+       </div>
+      
       <button type = "submit">Upload</button>
 
         
