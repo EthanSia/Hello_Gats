@@ -29,7 +29,7 @@ const IndexPage = () => {
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({ "form-name": "contact", " " }),
+    body: encode({ "form-name": "contact", ..." "}),
   })
     .then(() => navigate("/thank-you/"))
     .catch((error) => alert(error));
