@@ -10,7 +10,7 @@ const IndexPage = () => {
 
   const changeHandler = (event) => {
 	
-    const {name, value} = e.target
+    const {name, value} = event.target
     if (name === 'file' ){
       return setFile(value)
     }
